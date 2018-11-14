@@ -1,0 +1,16 @@
+
+<p>
+  about works!
+</p>
+
+<h1>Blog Posts</h1>
+<div *ngIf="undefined === restItems">Loading...</div>
+<div *ngIf="undefined !== restItems">
+  <ul>
+    <li *ngFor="let post of restItems['posts']" [innerHTML]="post.title"
+        (click)="selectedContent='<h1>' + post.title + '</h1>' + post.content">
+    </li>
+  </ul>
+</div>
+<!-- <div [innerHTML]="selectedContent"></div> -->
+<div *ngIf="undefined !== selectedContent" [innerHTML]="sanitizer.bypassSecurityTrustHtml(selectedContent)"></div>
