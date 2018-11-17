@@ -131,7 +131,9 @@
         <img [src]="employee.photoPath" height="200" width="200" *ngIf="previewPhoto" />
       </div>
 
-      <div ngModelGroup="passwordGroup" [class.has-error]="confirmPassword.touched && confirmPassword.invalid 
+      <div ngModelGroup="passwordGroup" 
+      [class.has-error]="confirmPassword.touched 
+             && confirmPassword.invalid 
              && !confirmPassword.errors?.required">
         <div class="form-group" [class.has-error]="password.touched && password.invalid">
           <label for="password" class="control-label">Password</label>
