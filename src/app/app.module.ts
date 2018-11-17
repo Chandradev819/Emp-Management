@@ -5,10 +5,9 @@ import {HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { SelectRequiredValidatorDirective } from './shared/select-required-validator.directive';
-
+import {ConfirmEqualValidatorDirective } from './shared/confirm-equal-validator.directive';
 
 import { AppComponent } from './app.component';
-
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
@@ -35,6 +34,7 @@ const appRoutes:Routes=[
     AboutComponent,
     ListEmployeesComponent,
     SelectRequiredValidatorDirective, 
+    ConfirmEqualValidatorDirective,
     CreateEmployeeComponent
   ],
   imports: [
