@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ListEmployeesComponent } from './employees/list-employees/list-employees.component';
 import { CreateEmployeeComponent } from  './employees/create-employee/create-employee.component';
+import { EmployeeService } from './employees/employee.service';
 
 
 const appRoutes:Routes=[
@@ -44,7 +45,7 @@ const appRoutes:Routes=[
     BsDatepickerModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
