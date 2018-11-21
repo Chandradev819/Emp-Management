@@ -12,7 +12,7 @@ export class EmployeeService {
             contactPreference: 'Email',
             email: 'mark@pragimtech.com',
             dateOfBirth: new Date('10/25/1988'),
-            department: 'IT',
+            department: '1',
             isActive: true,
             photoPath: 'assets/images/Img1.png'
           },
@@ -23,7 +23,7 @@ export class EmployeeService {
             contactPreference: 'Phone',
             phoneNumber: 2345978640,
             dateOfBirth: new Date('11/20/1979'),
-            department: 'HR',
+            department: '2',
             isActive: true,
             photoPath: 'assets/images/img2.jpg'
           },
@@ -34,7 +34,7 @@ export class EmployeeService {
             contactPreference: 'Phone',
             phoneNumber: 5432978640,
             dateOfBirth: new Date('3/25/1976'),
-            department: 'IT',
+            department: '3',
             isActive: false,
             photoPath: 'assets/images/Img3.jpg'
           }
@@ -43,5 +43,9 @@ export class EmployeeService {
 
     getEmployees():Employee[] {
         return this.listEmployees;
+    }
+
+    save(employee:Employee) {
+        this.listEmployees.push(employee);
     }
 }

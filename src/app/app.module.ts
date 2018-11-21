@@ -16,6 +16,7 @@ import { CreateEmployeeComponent } from  './employees/create-employee/create-emp
 import { EmployeeService } from './employees/employee.service';
 
 
+
 const appRoutes:Routes=[
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
@@ -37,6 +38,7 @@ const appRoutes:Routes=[
     SelectRequiredValidatorDirective, 
     ConfirmEqualValidatorDirective,
     CreateEmployeeComponent
+  
   ],
   imports: [
     BrowserModule, 
