@@ -14,6 +14,8 @@ import { AboutComponent } from './about/about.component';
 import { ListEmployeesComponent } from './employees/list-employees/list-employees.component';
 import { CreateEmployeeComponent } from  './employees/create-employee/create-employee.component';
 import { EmployeeService } from './employees/employee.service';
+import { DisplayEmployeeComponent } from './employees/display-employee/display-employee.component';
+
 
 
 
@@ -37,7 +39,9 @@ const appRoutes:Routes=[
     ListEmployeesComponent,
     SelectRequiredValidatorDirective, 
     ConfirmEqualValidatorDirective,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    DisplayEmployeeComponent
+  
   
   ],
   imports: [
